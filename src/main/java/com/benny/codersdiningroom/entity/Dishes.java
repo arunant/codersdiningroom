@@ -1,11 +1,12 @@
 package com.benny.codersdiningroom.entity;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@Component
-@ConfigurationProperties(prefix = "dishes")
+@Entity
 public class Dishes {
+    @Id
+    private Integer id;
     /**
      * 菜名
      */
@@ -21,7 +22,18 @@ public class Dishes {
     /**
      * 描述
      */
-    private String description;
+    private String mark;
+
+    public Dishes() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -47,11 +59,11 @@ public class Dishes {
         this.price = price;
     }
 
-    public String getDescription() {
-        return description;
+    public String getMark() {
+        return mark;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setMark(String mark) {
+        this.mark = mark;
     }
 }
