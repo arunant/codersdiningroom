@@ -1,0 +1,6 @@
+server:
+  port: 8080
+dishes:
+  name: 白灼菜心
+  price：18
+  description：很好吃
