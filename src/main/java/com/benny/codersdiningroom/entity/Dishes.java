@@ -1,7 +1,9 @@
 package com.benny.codersdiningroom.entity;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
+@Component
 @ConfigurationProperties(prefix = "dishes")
 public class Dishes {
     private String name;
