@@ -6,8 +6,21 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "dishes")
 public class Dishes {
+    /**
+     * 菜名
+     */
     private String name;
+    /**
+     * 菜品代码
+     */
+    private String code;
+    /**
+     * 菜品价格
+     */
     private float price;
+    /**
+     * 描述
+     */
     private String description;
 
     public String getName() {
@@ -16,6 +29,14 @@ public class Dishes {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public float getPrice() {
