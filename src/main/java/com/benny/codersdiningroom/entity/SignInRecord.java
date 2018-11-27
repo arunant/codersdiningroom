@@ -14,7 +14,7 @@ public class SignInRecord {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Integer userId;
-    private Date signInTime;
+    private Date signInTime = new Date();
 
     public Integer getUserId() {
         return userId;
