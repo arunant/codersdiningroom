@@ -13,7 +13,7 @@ public class OrderController {
     @Autowired
     private DishesRepository dishesRepository;
 
-    @RequestMapping(value = "/dishes")
+    @RequestMapping(value = "/cdr/dishes")
     public List<Dishes> getDishes() {
         return dishesRepository.findAll();
     }
