@@ -9,6 +9,7 @@ import java.util.Date;
  * @Description:
  */
 @Entity
+@Table(name = "t_sign_in_record")
 public class SignInRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

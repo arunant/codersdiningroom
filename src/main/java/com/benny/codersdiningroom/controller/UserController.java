@@ -37,4 +37,7 @@ public class UserController {
     public List<SignInRecord> getSignInRecord(String date){
         return signInRecordRepository.findAll();
     }
+    public List<SignInRecord> getSignInRecordByUserid(String userid){
+        return signInRecordRepository.findAll();
+    }
 }

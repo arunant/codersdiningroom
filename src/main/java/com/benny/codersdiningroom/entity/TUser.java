@@ -1,9 +1,6 @@
 package com.benny.codersdiningroom.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * @Auther: HANBIN
@@ -11,6 +8,7 @@ import javax.persistence.Id;
  * @Description:
  */
 @Entity
+@Table(name = "t_user")
 public class TUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
